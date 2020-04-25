@@ -159,28 +159,39 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
-img {
+.img-a {
   max-width: 100%;
   height: auto;
+  align-content: center;
+  justify-content: center;
+}
+.img-b {
+  display: flex;
+  height: auto;
+  flex-direction: column;
 }
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
-h1 {
-  font-family: 'Indie Flower', sans-serif;
+header {
+  width: 100%;
 }
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: flex-end;
+  text-decoration: none;
 }
 a {
-  background-color: darkgray;
+  background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
+  text-decoration: none;
+  color: #212529;
+  justify-content: flex-end;
 }
 .footer {
   width: 100%;
@@ -203,39 +214,46 @@ a {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
-  width: 48%;
-  padding-left: 1%;
+.home .content-section .img-a {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
-.home .content-section .img-content img {
-  border-radius: 10px;
-}
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.img-a .inverse-content.inverse-content .img-b {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.btn {
+  background-color: #17A2B8;
+  color: #212529;
+  font-size: 2rem;
 }
