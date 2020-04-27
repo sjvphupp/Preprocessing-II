@@ -262,3 +262,6 @@ a {
   color: #212529;
   font-size: 1.8rem;
 }
+.added-paragraph {
+  border-bottom: 2px dashed #C0C0C0;
+}
