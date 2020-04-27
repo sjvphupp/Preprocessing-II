@@ -2,20 +2,24 @@
 header {
     width: 100%;
 }    
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-end;
-        text-decoration: none;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    flex-direction: row;
+    width: 50%;
+    background-color: @main-bg;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    text-align: right;
+    float: right;
 
 }
-        a {
-            background-color: @main-bg; 
-            display: flex; 
-            flex-wrap: wrap;
-            align-items: flex-end;
-            text-decoration: none; 
-            color: @font-color;
-            justify-content: flex-end;
-
-    }
+a { 
+    display: flex; 
+    flex-wrap: wrap;
+    text-decoration: none; 
+    color: @font-color;
+    font-size: 20px;
+    text-align: right;
+ }

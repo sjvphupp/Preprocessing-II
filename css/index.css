@@ -181,17 +181,22 @@ header {
 nav {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
   text-decoration: none;
+  flex-direction: row;
+  width: 50%;
+  background-color: #FFFFFF;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  text-align: right;
+  float: right;
 }
 a {
-  background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
   text-decoration: none;
   color: #212529;
-  justify-content: flex-end;
+  font-size: 20px;
+  text-align: right;
 }
 .footer {
   width: 100%;
@@ -255,5 +260,5 @@ a {
 .btn {
   background-color: #17A2B8;
   color: #212529;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
